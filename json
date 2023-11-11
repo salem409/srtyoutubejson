@@ -1,0 +1,36 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Get SRT",
+    "description": "Get SRT of YouTube Video",
+    "version": "v1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://subtitles-for-youtube.p.rapidapi.com"
+    }
+  ],
+  "paths": {
+    "/subtitles/{videoId}.srt": {
+      "get": {
+        "description": "Get srt of youtube video",
+        "operationId": "GetCurrentWeather",
+        "parameters": [
+          {
+            "name": "videoId",
+            "in": "path",
+            "description": "video id to get srt from",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "deprecated": false
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
